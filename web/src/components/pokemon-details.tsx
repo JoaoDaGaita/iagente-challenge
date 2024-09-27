@@ -13,7 +13,9 @@ export interface PokemonDetailProps {
   pokemon: PokemonDetail
 }
 
-const pokemonFav = ['']
+const pokemonFav = JSON.parse(
+  sessionStorage.getItem('pokemonFav') || '[]'
+) as string[]
 
 export function PokemonDetails({ pokemon }: PokemonDetailProps) {
   function handleFavoritePokemon(pokemonName: string) {
