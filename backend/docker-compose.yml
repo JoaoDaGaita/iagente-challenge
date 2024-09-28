@@ -7,6 +7,6 @@ services:
     ports:
       - '5432:5432'
     environment:
-      - POSTGRES_USER=docker
-      - POSTGRES_PASSWORD=docker
-      - POSTGRES_DB=iagente
+      - POSTGRES_USER=pokedb_yaxy_user
+      - POSTGRES_PASSWORD=JLbYSE9PGCA6kxMp2PuqnnZjx3XyNSgg
+      - POSTGRES_DB=pokedb_yaxy
